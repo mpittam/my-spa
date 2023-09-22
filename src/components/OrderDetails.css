@@ -1,0 +1,42 @@
+/* OrderDetails.css */
+.order-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .order-table th, .order-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .order-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .nested-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 20px; /* Indent nested tables */
+  }
+  
+  .nested-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* OrderDetails.css */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .center-table {
+    max-width: 80%; /* Adjust the width as needed */
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    margin-top: 20px; /* Add top margin for spacing */
+  }
+  
