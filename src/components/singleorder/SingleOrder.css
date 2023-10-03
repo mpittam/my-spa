@@ -1,0 +1,32 @@
+table {
+    width: 70%;
+    border-collapse: collapse;
+    
+  }
+
+.item-table {
+    width: 100%;
+} 
+
+
+th, td {
+    border: 1px solid;
+    padding: 10px;
+  }
+
+
+.single-table {
+    margin-top: 50px;
+}
+
+.success {
+   background-color: green;
+   color: white;
+   text-transform: uppercase;
+}
+
+.warning {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+}

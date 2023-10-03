@@ -1,12 +1,12 @@
 import React from 'react';
 
-import OrderDetails from './OrderDetails';
+import Order from '../order/Order';
 
 function Home() {
   return (
     <div>
       <h2>Home Page</h2>
-      <OrderDetails/>
+      <Order/>
     </div>
   );
 }
