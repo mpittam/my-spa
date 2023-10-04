@@ -3,6 +3,10 @@ import './SingleOrder.css'; // Import a CSS file for styling
 function SingleOrder({ order }) {
 
 
+    const paymentsPage = () => {
+        console.log('Payments manager')
+    }
+
 
     return (
         <table className="single-table">
@@ -12,7 +16,7 @@ function SingleOrder({ order }) {
             </tr>
             <tr>
                 <th>FULL NAME</th>
-                <td>{`${order && order.billing && order.billing.first_name} ${order && order.billing &&  order.billing.last_name}`}</td>
+                <td>{`${order && order.billing && order.billing.first_name} ${order && order.billing && order.billing.last_name}`}</td>
             </tr>
             <tr>
                 <th>ITEMS ORDERED</th>
@@ -38,9 +42,12 @@ function SingleOrder({ order }) {
             </tr>
             <tr>
                 <th>PAYMENT STATUS</th>
-                <td className={order.status == 'completed' ? 'success' : 'warning'}>
+                {/* <td className={order.status == 'completed' ? 'success' : 'warning'}>
                     {order.status}
-                    </td>
+                </td> */}
+                {order.status === 'completed' ?
+                    (<td className='success'>{order.status}</td>) :
+                    (<td onClick={paymentsPage} className='warning'>{`${order.status}`} - <span className='payLabel'>Click to pay</span></td>)}
             </tr>
         </table>
     )

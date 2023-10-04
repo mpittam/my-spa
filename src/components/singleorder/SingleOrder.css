@@ -30,3 +30,13 @@ th, td {
     color: white;
     text-transform: uppercase;
 }
+
+.payLabel {
+  font-style: italic;
+  font-size: small;
+}
+
+.warning:hover {
+  background-color: rgb(70, 70, 194);
+  cursor: pointer;
+}

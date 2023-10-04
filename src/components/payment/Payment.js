@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About() {
+function Payment() {
   return (
 <div class="container">
  
@@ -28,4 +28,4 @@ function About() {
   );
 }
 
-export default About;
+export default Payment;
