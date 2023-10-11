@@ -26,7 +26,7 @@ function Payment() {
           <input type="hidden" name="xStreet" value="123 Main St" />
           <input type="hidden" name="xZip" value="11111" />
 
-          <input type="hidden" name="xRedirectURL" value="https://localhost.3000/paymentrespone" />
+          <input type="hidden" name="xRedirectURL" value="https://www.cardknox.com/bbpos/response.htm" />
           <input type="submit" value="Initiate Payment" />
 
         </div>
