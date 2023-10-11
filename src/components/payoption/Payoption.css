@@ -47,6 +47,12 @@
     cursor: pointer;
 }
 
+.deactive {
+    background-color: rgb(119, 121, 122);
+    color: white;
+    cursor: not-allowed;
+}
+
 .inactive {
     cursor: not-allowed;
 }

@@ -43,7 +43,7 @@ function Payoption({ orderId, orderAmount }) {
                 <input
                     type="button"
                     value={paymode ? paymode === "creditcard" ? `Pay by ${paymode}` : `Pay by ${paymode} {disabled}` : `Choose pay method`}
-                    className={paymode ? "pay-btn active" : "pay-btn inactive"}
+                    className={paymode ? (paymode === "creditcard" ? "pay-btn active" : "pay-btn deactive") : "pay-btn inactive"}
                     onClick={clickHandler}
                 />
             </div>
