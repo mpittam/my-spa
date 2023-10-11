@@ -1,0 +1,56 @@
+.pay-option {
+    position: relative;
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+.pay-label {
+    /* background-color: blanchedalmond; */
+    font-family: cursive;
+    padding: 10px;
+    color: black
+}
+
+.pay-img {
+    width: 30%;
+    height: 80px;
+}
+
+.img-select {
+    opacity: 0.5;
+}
+
+.pay-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.pay-btn {
+    display: block;
+    position: absolute;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(119, 121, 122);
+}
+
+.active {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.inactive {
+    cursor: not-allowed;
+}
+
+.pay-btn:hover {
+    opacity: 0.5;
+}

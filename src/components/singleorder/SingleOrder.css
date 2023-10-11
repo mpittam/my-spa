@@ -36,7 +36,37 @@ th, td {
   font-size: small;
 }
 
-.warning:hover {
+/* .warning:hover {
   background-color: rgb(70, 70, 194);
   cursor: pointer;
+} */
+
+.payment-form {
+  background-color: grey;
+  width: 25%;
+  height: 200px;
+  margin-left: 100px;
+}
+
+.payment-option img {
+  width: 80px;
+  height: 50px;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
 }
