@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import creditcard from "../../assets/creditcard.png"
-import paypal from "../../assets/paypal.png"
+import creditcard from "../../assets/credit-card.png"
+import ebt from "../../assets/ebt.jpeg"
+import cash from "../../assets/cash.jpg"
 import './Payoption.css';
 
 function Payoption({ orderId, orderAmount }) {
@@ -33,10 +34,18 @@ function Payoption({ orderId, orderAmount }) {
                     value={paymode}
                 />
                 <img
-                    className={paymode === "paypal" ? "pay-img img-select" : "pay-img"}
-                    src={paypal}
-                    name="paypal"
-                    alt="paypal"
+                    className={paymode === "ebt" ? "pay-img2 img-select" : "pay-img2"}
+                    src={ebt}
+                    name="ebt"
+                    alt="ebt"
+                    onClick={changeHandler}
+                    value={paymode}
+                />
+                <img
+                    className={paymode === "cash" ? "pay-img img-select" : "pay-img"}
+                    src={cash}
+                    name="cash"
+                    alt="cash"
                     onClick={changeHandler}
                     value={paymode}
                 />

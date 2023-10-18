@@ -19,10 +19,10 @@ function Payment() {
           
           <input type="hidden" name="xCommand" value="cc:sale" />
           <label htmlFor="uname"><b>Amount</b></label>
-          <input type="text" name="xAmount" value={orderId} />
+          <input type="text" name="xAmount" value={orderAmount} />
 
           <label htmlFor="psw"><b>Invoice</b></label>
-          <input type="text" name="xInvoice" value={orderAmount} />
+          <input type="text" name="xInvoice" value={orderId} />
           <input type="hidden" name="xStreet" value="123 Main St" />
           <input type="hidden" name="xZip" value="11111" />
 
